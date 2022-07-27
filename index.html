@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reg Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center><h1>Form Validation using HTML,CSS,JavaScript</h1></center>
+    <hr />
+    <form method="" action="" name="reg_form" onsubmit="return validate()">
+      <h2>Registration Form</h2>
+      <table>
+        <tr>
+          <td><label>First Name: </label></td>
+          <td>
+            <input type="text" name="fname" placeholder="First Name" />
+            <div id="error1"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Last Name: </label></td>
+          <td>
+            <input type="text" name="lname" placeholder="Last Name" />
+            <div id="error2"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Company Name: </label></td>
+          <td>
+            <input type="text" name="cname" placeholder="Company Name" />
+            <div id="error3"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Email Id: </label></td>
+          <td>
+            <input type="email" name="email" placeholder="example@gmail.com" />
+            <div id="error4"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Mobile: </label></td>
+          <td>
+            <input type="number" name="mobile" />
+            <div id="error5"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Country: </label></td>
+          <td>
+            <select name="course">
+              <option value="select course">Select Country</option>
+              <option value="HTML">INDIA</option>
+              <option value="CSS">USA</option>
+              <option value="JavaScript">GERMANY</option>
+              <option value="Java">NEW ZEALAND</option>
+            </select>
+            <div id="error6"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Gender: </label></td>
+          <td>
+            <input type="radio" name="gender" value="male" id="male" />Male
+            <input
+              type="radio"
+              name="gender"
+              value="femele"
+              id="female"
+            />Female
+            <input type="radio" name="gender" value="other" id="other" />Other
+            <div id="error7"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Languages Known:</td>
+          <td>
+            <input type="checkbox" name="check" id="firstCheck" />
+            <label for="check1"> English </label>
+
+            <input type="checkbox" name="check" id="secCheck" />
+            <label for="check2"> Marathi</label>
+
+            <input type="checkbox" name="check" id="thirdCheck" />
+            <label for="check3">  Hindi</label>
+            <div id="error8"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Comment:</td>
+          <td>
+            <textarea
+              name="lebelopinion"
+              cols="50"
+              rows="5"
+              placeholder="Enter Your Comment"
+            ></textarea>
+            <div id="error9"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="" id="" /></td>
+          <td>Check All Terms and Condition</td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="submit" name="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
